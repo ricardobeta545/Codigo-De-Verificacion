@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 40px;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.cliente-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+#bienvenido {
+  font-size: 26px;
+  color: #333;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.dinero-box {
+  background-color: #ca2f2f;
+  color: white;
+  padding: 30px 50px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+
+/* No tienes una media query en este archivo, así que agregamos una */
+@media screen and (max-width: 1366px) {
+
+    /* Header: Reducimos el padding y el tamaño de fuente si es necesario */
+    .header {
+        padding: 15px 25px; /* Reducimos el padding lateral */
+    }
+
+    #bienvenido {
+        font-size: 24px; /* Un poco más pequeño */
+    }
+
+    /* Main: Reducimos la altura para ajustarnos a 768px */
+    .main {
+        height: 60vh; /* Reducimos la altura relativa */
+    }
+
+    /* Dinero Box: Lo hacemos un poco más compacto */
+    .dinero-box {
+        padding: 25px 40px;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,95 @@
+
+body{
+  width: auto;
+  height: auto;
+  background: linear-gradient(
+    to right,
+    rgb(105, 224, 105) 0%,
+    rgb(49, 175, 49) 50%,
+    #ca2f2f 50%,
+    rgb(209, 102, 102)  100%
+  );
+}
+
+
+
+
+.img2{
+    position: absolute;
+    top: 300px;
+    left: 250px;
+}
+
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 300px;
+    left: 1300px;
+    text-align: center;
+}
+
+
+.text-1{
+    font-size: 40px;
+}
+
+.text-2{
+    font-size: 20px;
+}
+
+.cod {
+  font-size: 30px;
+}
+
+.cont {
+  color: green;
+}
+
+
+.btn{
+    position: absolute;
+    top: 850px;
+    left: 860px;
+    border-radius: 20px;
+    width: 200px; 
+    height: 50px;
+    font-size: 20px;
+    background-color: rgb(243, 167, 1);
+}
+
+.btn:hover {
+    background-color: rgb(224, 174, 66);
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 1366px) {
+    /* Se sugiere asegurar que el alto no exceda el viewport para 768px */
+    body {
+        height: 100vh;
+    }
+
+    /* Imagen decorativa (img2): La movemos más cerca del centro (hacia la derecha) */
+    .img2 {
+        top: 250px; /* Un poco más abajo */
+        left: 100px; /* Mueve la imagen más hacia la izquierda (era 140px) */
+    }
+
+    /* Contenedor principal de texto: Lo movemos más cerca del centro (hacia la izquierda) */
+    .container {
+        top: 200px;
+        left: 950px; /* Mueve el contenedor significativamente a la izquierda (era 1300px) */
+    }
+
+    /* Botón (btn): Ajustamos su posición para que sea visible en 768px de alto */
+    .btn {
+        top: 650px; /* Subimos el botón significativamente (era 850px) */
+        left: 650px; /* Ajustamos la posición horizontal para centrarlo mejor */
+    }
+
+    /* Nota: Los estilos para text-1, text-2, cod y cont parecen correctos. */
+}

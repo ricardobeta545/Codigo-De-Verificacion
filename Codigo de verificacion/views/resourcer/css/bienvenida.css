@@ -1,0 +1,122 @@
+
+body{
+  width: auto;
+  height: auto;
+  background: linear-gradient(
+    to right,
+    rgb(228, 176, 176) 0%,
+    #ce4545 50%,
+    rgb(65, 177, 65) 50%,
+    rgb(163, 231, 163) 100%
+  );
+}
+
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 150px;
+    left: 190px;
+    text-align: center;
+
+}
+
+.text-1{
+    font-size: 55px;
+}
+
+.text-2{
+    font-size: 20px;
+    left: 30px;
+}
+
+
+.bajar{
+    padding-top: 440px;
+    padding-left: 200px;
+}
+
+.text-3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+ 
+}
+
+.fle-ver{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 480px;
+    left: 150px;
+}
+
+.img1{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.img2{
+    position: absolute;
+    top: 300px;
+    left: 1250px;
+
+}
+
+
+.btn{
+    position: absolute;
+    top: 850px;
+    left: 860px;
+    border-radius: 20px;
+    width: 200px; 
+    height: 50px;
+    font-size: 20px;
+    background-color: rgb(231, 160, 7);
+}
+
+.btn:hover {
+    background-color: rgb(224, 174, 66);
+
+}
+
+
+
+
+@media screen and (max-width: 1366px) {
+    /* Mantenemos el cuerpo y el gradiente */
+    body {
+        /* Se sugiere asegurar que el alto no exceda el viewport para 768px */
+        height: 100vh; /* Ajuste para la altura de la pantalla */
+    }
+
+    /* Contenedor principal de texto: Lo movemos más hacia la izquierda/arriba */
+    .container {
+        top: 100px; /* Un poco más arriba */
+        left: 100px; /* Más a la izquierda para que el texto principal se vea */
+    }
+
+    /* Imagen decorativa (img2): La movemos para que no se salga de la pantalla */
+    .img2 {
+        top: 250px; /* Un poco más arriba */
+        left: 1050px; /* Mueve la imagen mucho más a la izquierda (era 1250px) */
+    }
+
+    /* Sección de bajar (flecha/texto): Ajustamos el padding para la posición en 768px de alto */
+    .bajar {
+        /* Reducimos el padding para que no se salga de la pantalla verticalmente */
+        padding-top: 350px;
+        padding-left: 150px;
+    }
+
+    /* Flecha (fle-ver): Ajustamos su posición absoluta */
+    .fle-ver {
+        top: 390px; /* Posicionamos la flecha en la nueva altura de .bajar */
+        left: 100px; /* Ajustamos la posición horizontal */
+    }
+
+    /* Botón (btn): Ajustamos su posición para que sea visible en 768px de alto */
+    .btn {
+        top: 650px; /* Subimos el botón significativamente (era 850px) */
+        left: 700px; /* Ajustamos la posición horizontal para centrarlo mejor */
+    }
+}

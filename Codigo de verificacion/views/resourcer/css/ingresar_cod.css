@@ -1,0 +1,101 @@
+body{
+  width: auto;
+  height: auto;
+  background: linear-gradient(
+    to right,
+    rgb(105, 224, 105) 0%,
+    rgb(49, 175, 49) 50%,
+    #ca2f2f 50%,
+    rgb(209, 102, 102)  100%
+  );
+}
+
+
+
+
+.img{
+    position: absolute;
+    top: 300px;
+    left: 250px;
+}
+
+
+.card {
+  position: absolute;
+  top: 350px;   
+  right: 250px; 
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.card input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #17C694;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  outline: none;
+  text-align: center;
+  transition: border 0.3s;
+}
+
+.card input:focus {
+  border-color: #13a97d;
+}
+
+.card button {
+  background: #17C694;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.card button:hover {
+  background: #13a97d;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+
+/* No tienes una media query en este archivo, así que agregamos una */
+@media screen and (max-width: 1366px) {
+    /* Se sugiere asegurar que el alto no exceda el viewport para 768px */
+    body {
+        height: 100vh;
+    }
+
+    /* Imagen (img): La movemos más cerca del centro (hacia la derecha) */
+    .img {
+        top: 300px;
+        left: 100px; /* Mueve la imagen más hacia la izquierda (era 250px) */
+    }
+
+    /* Tarjeta de formulario (card): La movemos más cerca del centro (hacia la izquierda) */
+    .card {
+        top: 250px; /* Un poco más arriba */
+        right: 150px; /* Acercamos la tarjeta (era 250px) */
+    }
+}

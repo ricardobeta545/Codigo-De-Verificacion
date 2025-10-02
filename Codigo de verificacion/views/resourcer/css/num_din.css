@@ -1,0 +1,113 @@
+body{
+  width: auto;
+  height: auto;
+  background: linear-gradient(
+    to right,
+    rgb(228, 164, 164) 0%,
+    #db2f2f 50%,
+    rgb(68, 219, 68) 50%,
+    rgb(139, 243, 139) 100%
+  );
+}
+
+
+
+.img{
+  position: absolute;
+  top: 300px;
+  left: 1250px;
+
+}
+
+
+
+
+.card-form {
+  position: relative;
+  top: 300px;
+  left: -450px;
+  width: 350px;
+  background: #ffffff;
+  border: 2px solid #17C694;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 40px auto;
+  text-align: left;
+}
+
+.card-form h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.card-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.card-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #17C694;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+.card-form input:focus {
+  border-color: #13a97d;
+}
+
+.card-form button {
+  width: 100%;
+  padding: 12px;
+  background: #17C694;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-form button:hover {
+  background: #13a97d;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  display: block;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 1366px) {
+    /* Se sugiere asegurar que el alto no exceda el viewport para 768px */
+    body {
+        height: 100vh;
+    }
+
+    /* Imagen (img): La movemos para que no se salga de la pantalla */
+    .img {
+        top: 300px;
+        left: 1000px; /* Mueve la imagen más a la izquierda (era 1250px) */
+    }
+
+    /* Tarjeta de formulario (card-form): La centramos y ajustamos su posición vertical */
+    .card-form {
+        top: 250px; /* Ajustamos la posición vertical */
+        left: 200px; /* Eliminamos el left negativo y la posicionamos */
+        margin: 0; /* Eliminamos el margin para controlar la posición con top/left */
+    }
+
+    /* Nota: Los estilos dentro de la tarjeta (h3, label, input, button) no necesitan ajuste. */
+}
