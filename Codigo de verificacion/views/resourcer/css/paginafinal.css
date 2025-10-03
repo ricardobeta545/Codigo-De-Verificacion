@@ -43,24 +43,19 @@ body {
 }
 
 
-/* No tienes una media query en este archivo, así que agregamos una */
 @media screen and (max-width: 1366px) {
-
-    /* Header: Reducimos el padding y el tamaño de fuente si es necesario */
     .header {
-        padding: 15px 25px; /* Reducimos el padding lateral */
+        padding: 15px 25px; 
     }
 
     #bienvenido {
-        font-size: 24px; /* Un poco más pequeño */
+        font-size: 24px; 
     }
 
-    /* Main: Reducimos la altura para ajustarnos a 768px */
     .main {
-        height: 60vh; /* Reducimos la altura relativa */
+        height: 60vh; 
     }
 
-    /* Dinero Box: Lo hacemos un poco más compacto */
     .dinero-box {
         padding: 25px 40px;
         font-size: 20px;
