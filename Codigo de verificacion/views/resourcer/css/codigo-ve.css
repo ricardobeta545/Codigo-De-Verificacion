@@ -68,28 +68,23 @@ body{
 
 
 @media screen and (max-width: 1366px) {
-    /* Se sugiere asegurar que el alto no exceda el viewport para 768px */
     body {
         height: 100vh;
     }
 
-    /* Imagen decorativa (img2): La movemos más cerca del centro (hacia la derecha) */
     .img2 {
-        top: 250px; /* Un poco más abajo */
-        left: 100px; /* Mueve la imagen más hacia la izquierda (era 140px) */
+        top: 250px; 
+        left: 100px; 
     }
 
-    /* Contenedor principal de texto: Lo movemos más cerca del centro (hacia la izquierda) */
     .container {
         top: 200px;
-        left: 950px; /* Mueve el contenedor significativamente a la izquierda (era 1300px) */
+        left: 950px; 
     }
 
-    /* Botón (btn): Ajustamos su posición para que sea visible en 768px de alto */
     .btn {
-        top: 650px; /* Subimos el botón significativamente (era 850px) */
-        left: 650px; /* Ajustamos la posición horizontal para centrarlo mejor */
+        top: 650px; 
+        left: 650px;
     }
 
-    /* Nota: Los estilos para text-1, text-2, cod y cont parecen correctos. */
 }
