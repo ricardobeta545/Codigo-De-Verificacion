@@ -91,23 +91,18 @@ body{
 
 
 @media screen and (max-width: 1366px) {
-    /* Se sugiere asegurar que el alto no exceda el viewport para 768px */
     body {
         height: 100vh;
     }
 
-    /* Imagen (img): La movemos para que no se salga de la pantalla */
     .img {
         top: 300px;
-        left: 1000px; /* Mueve la imagen más a la izquierda (era 1250px) */
+        left: 1000px; 
     }
 
-    /* Tarjeta de formulario (card-form): La centramos y ajustamos su posición vertical */
     .card-form {
-        top: 250px; /* Ajustamos la posición vertical */
-        left: 200px; /* Eliminamos el left negativo y la posicionamos */
-        margin: 0; /* Eliminamos el margin para controlar la posición con top/left */
+        top: 250px; 
+        left: 200px; 
+        margin: 0; 
     }
-
-    /* Nota: Los estilos dentro de la tarjeta (h3, label, input, button) no necesitan ajuste. */
 }
