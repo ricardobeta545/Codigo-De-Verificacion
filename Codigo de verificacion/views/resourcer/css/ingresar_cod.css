@@ -80,22 +80,19 @@ body{
 }
 
 
-/* No tienes una media query en este archivo, así que agregamos una */
 @media screen and (max-width: 1366px) {
-    /* Se sugiere asegurar que el alto no exceda el viewport para 768px */
     body {
         height: 100vh;
     }
 
-    /* Imagen (img): La movemos más cerca del centro (hacia la derecha) */
     .img {
         top: 300px;
-        left: 100px; /* Mueve la imagen más hacia la izquierda (era 250px) */
+        left: 100px; 
     }
 
-    /* Tarjeta de formulario (card): La movemos más cerca del centro (hacia la izquierda) */
+  
     .card {
-        top: 250px; /* Un poco más arriba */
-        right: 150px; /* Acercamos la tarjeta (era 250px) */
+        top: 250px; 
+        right: 150px; 
     }
 }
