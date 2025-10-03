@@ -83,40 +83,36 @@ body{
 
 
 @media screen and (max-width: 1366px) {
-    /* Mantenemos el cuerpo y el gradiente */
+   
     body {
-        /* Se sugiere asegurar que el alto no exceda el viewport para 768px */
-        height: 100vh; /* Ajuste para la altura de la pantalla */
+        height: 100vh; 
     }
 
-    /* Contenedor principal de texto: Lo movemos más hacia la izquierda/arriba */
+
     .container {
-        top: 100px; /* Un poco más arriba */
-        left: 100px; /* Más a la izquierda para que el texto principal se vea */
+        top: 100px;
+        left: 100px;
     }
 
-    /* Imagen decorativa (img2): La movemos para que no se salga de la pantalla */
+
     .img2 {
-        top: 250px; /* Un poco más arriba */
-        left: 1050px; /* Mueve la imagen mucho más a la izquierda (era 1250px) */
+        top: 250px; 
+        left: 1050px; 
     }
 
-    /* Sección de bajar (flecha/texto): Ajustamos el padding para la posición en 768px de alto */
+
     .bajar {
-        /* Reducimos el padding para que no se salga de la pantalla verticalmente */
         padding-top: 350px;
         padding-left: 150px;
     }
 
-    /* Flecha (fle-ver): Ajustamos su posición absoluta */
     .fle-ver {
-        top: 390px; /* Posicionamos la flecha en la nueva altura de .bajar */
-        left: 100px; /* Ajustamos la posición horizontal */
+        top: 390px;
+        left: 100px;
     }
 
-    /* Botón (btn): Ajustamos su posición para que sea visible en 768px de alto */
     .btn {
-        top: 650px; /* Subimos el botón significativamente (era 850px) */
-        left: 700px; /* Ajustamos la posición horizontal para centrarlo mejor */
+        top: 650px;
+        left: 700px;
     }
 }
