@@ -73,40 +73,37 @@ body {
 
 @media screen and (max-width: 1366px) {
     body {
-        /* Reducimos el tamaño de la imagen de fondo para que se ajuste */
-        background-size: 1366px 768px; /* Ajustamos al tamaño de la pantalla */
-        height: 100vh; /* Aseguramos que ocupe todo el alto */
+        background-size: 1366px 768px;
+        height: 100vh; 
     }
-
-    /* Reducimos las coordenadas 'left' para todos los elementos centrados (icono, img2, img3, text-1, text-2, btn) */
 
     .icono {
         top: 210px;
-        left: 650px; /* Mover más a la izquierda (era 930px) */
+        left: 650px;
     }
 
     .img2 {
         top: 200px;
-        left: 620px; /* Mover más a la izquierda (era 900px) */
+        left: 620px; 
     }
 
     .img3 {
         top: 550px;
-        left: 680px; /* Mover más a la izquierda (era 960px) */
+        left: 680px; 
     }
 
     .text-1 {
         top: 410px;
-        left: 670px; /* Mover más a la izquierda (era 950px) */
+        left: 670px; 
     }
 
     .text-2 {
         top: 630px;
-        left: 590px; /* Mover más a la izquierda (era 870px) */
+        left: 590px; 
     }
 
     .btn {
-        top: 750px; /* Subimos el botón (era 800px) */
-        left: 670px; /* Mover más a la izquierda (era 950px) */
+        top: 750px; 
+        left: 670px;
     }
 }
